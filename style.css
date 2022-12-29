@@ -11,25 +11,29 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #4285F4;
+  background: #505967;
 }
 .container{
   width: 450px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        margin: 2rem;
+
 }
 .container h2{
   font-weight: 600;
   font-size: 1.31rem;
-  padding: 1rem 1.75rem;
   border-bottom: 1px solid #d4dbe5;
+        PADDING-TOP: 1rem;
+    padding-bottom: 1rem;
 }
 .wrapper{
   margin: 1.25rem 1.75rem;
 }
 .wrapper .input-box{
   position: relative;
+    padding-top: 1rem;
 }
 .input-box input{
   width: 100%;
