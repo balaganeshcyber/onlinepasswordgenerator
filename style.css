@@ -1,210 +1,135 @@
-/* Font import--- */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Karla:wght@800&display=swap');
-
-/* Reset------------------ */
-
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-	margin: 0;
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
-
-img {
-	display: block;
-	width: 100%;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #4285F4;
 }
-
-/* Typography             */
-
-body {
-	font-family: 'Inter', sans-serif;
-	color: #fff;
-	background-color: #1c1c1c;
+.container{
+  width: 450px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
-
-h1 {
-	font-family: 'Karla', sans-serif;
-	font-weight: 700;
-	margin: 0.25em 0;
+.container h2{
+  font-weight: 600;
+  font-size: 1.31rem;
+  padding: 1rem 1.75rem;
+  border-bottom: 1px solid #d4dbe5;
 }
-
-h2 {
-	color: #1f2937;
-	font-size: 1.1em;
-	font-weight: 400;
-	margin-bottom: 1em;
+.wrapper{
+  margin: 1.25rem 1.75rem;
 }
-
-hr {
-	background-color: #273549;
-	color: #273549;
-	height: 2px;
-	border: 0;
-	width: 40%;
-	margin: 30px auto;
+.wrapper .input-box{
+  position: relative;
 }
-
-.center-ball {
-	background: #10b981;
+.input-box input{
+  width: 100%;
+  height: 53px;
+  color: #000;
+  background: none;
+  font-size: 1.06rem;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid #aaa;
+  padding: 0 2.85rem 0 1rem;
 }
-
-.center-ball::before {
-	content: '';
-	width: 6px;
-	height: 6px;
-	background: #10b981;
-	display: inline-block;
-	border: 2px solid #10b981;
-	position: absolute;
-	top: -4px;
-	left: 50%;
-	margin: 0 0 0 -3px;
+.input-box span{
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+  color: #707070;
 }
-
-footer {
-	padding: 2em;
+.input-box span:hover{
+  color: #4285F4!important;
 }
-
-/* Buttons                */
-
-.btn {
-	font-size: 0.95em;
-	font-weight: 500;
-  line-height: 24px;
-	font-family: 'Inter', sans-serif;
-	background-color: #10b981;
-	color: #fff;
-	border: none;
-	padding: 0.5em 1em;
-	border-radius: 0.25em;
-	margin: 2em 0;
-	cursor: pointer;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
-		0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
-		0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
-	transition: all 250ms;
+.wrapper .pass-indicator{
+  width: 100%;
+  height: 4px;
+  position: relative;
+  background: #dfdfdf;
+  margin-top: 0.75rem;
+  border-radius: 25px;
 }
-
-.btn:hover,
-.btn:focus {
-	background-color: #fff;
-	color: #10b981;
-	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
-		0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
-		0 32px 16px rgba(0, 0, 0, 0.09);
+.pass-indicator::before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
 }
-
-/* Util        */
-
-.flex {
-	display: flex;
-	flex-direction: column;
+.pass-indicator#weak::before{
+  width: 20%;
+  background: #E64A4A;
 }
-
-/* Components             */
-
-main {
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+.pass-indicator#medium::before{
+  width: 50%;
+  background: #f1c80b;
 }
-
-.container {
-	width: min(90%, 39rem);
-	padding: 2em;
-	background-color: #1f2937;
-	border-radius: 0.25em;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
-		0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
-		0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+.pass-indicator#strong::before{
+  width: 100%;
+  background: #4285F4;
 }
-
-/* Slider */
-
-#password-slider-text {
-	font-size: 0.95em;
-	color: #d5d4d8;
+.wrapper .pass-length{
+  margin: 1.56rem 0 1.25rem;
 }
-
-#sliderNumber {
-	font-family: 'Karla', sans-serif;
-	color: #55f991;
+.pass-length .details{
+  display: flex;
+  justify-content: space-between;
 }
-
-#slider {
-	display: block;
-	margin-top: 0.5em;
+.pass-length input{
+  width: 100%;
+  height: 5px;
 }
-
-.title-green {
-	color: #55f991;
+.pass-settings .options{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1rem;
 }
-
-.fa-bolt {
-	margin-right: 0.75em;
+.pass-settings .options .option{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: calc(100% / 2);
 }
-
-#letter-main {
-	text-transform: uppercase;
+.options .option:first-child{
+  pointer-events: none;
 }
-
-.bottomSection {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, 1fr);
-	gap: 1em;
-	margin-top: 1em;
+.options .option:first-child input{
+  opacity: 0.7;
 }
-
-.generatedPassword {
-	background-color: #273549;
-	text-align: center;
-	padding: 0.5em 1em;
-	border-radius: 0.25em;
+.options .option input{
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
 }
-
-input {
-	color: #55f991;
-	background-color: #273549;
-	border: none;
-	text-align: center;
-	padding: 0;
-	font-size: 1rem;
-	max-width: 15ch;
+.options .option label{
+  cursor: pointer;
+  color: #4f4f4f;
+  padding-left: 0.63rem;
 }
-
-input[type='text'] {
-	cursor: pointer;
-}
-
-.fa-ellipsis {
-	color: #878788;
-}
-
-/* footer */
-
-.attribution {
-	font-family: 'Inter', sans-serif;
-	font-size: 11px;
-	text-align: center;
-}
-
-.attribution a {
-	text-decoration: none;
-	color: inherit;
-}
-
-/* Media queries          */
-
-@media (min-width: 520px) {
-	.container {
-		padding: 4em;
-	}
-
-	.bottomSection {
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(2, 1fr);
-	}
+.wrapper .generate-btn{
+  width: 100%;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #4285F4;
+  font-size: 1.06rem;
+  padding: 0.94rem 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 0.94rem 0 1.3rem;
 }
