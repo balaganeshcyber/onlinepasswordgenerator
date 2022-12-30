@@ -1,180 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<link rel="icon" href="./assets/images/favicon.ico" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Generate random, secure, and strong passwords for a safe online experience." />
-<meta name="keywords" content="Password Generator, Secure Password Generator, Random Password Generator, Online Password Generator, Generate Password" />
-<meta property="og:image" content="./assets/images/530.png" />
-<meta property="og:image:type" content="image/png" />
-<meta property="og:image:width" content="530" />
-<meta property="og:image:height" content="300" />
-<meta name="theme-color" content="#0e141f" />
-<link rel="apple-touch-icon" href="./assets/images/192.png" />
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<link href="https://fonts.googleapis.com/css?family=Alata|Open+Sans&display=swap" rel="stylesheet" />
-<link href="./assets/styles/index.css" rel="stylesheet" />
-<link href="./assets/styles/style.css" rel="stylesheet" />
 
-<link rel="manifest" href="./manifest.json" />
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1588995012137653" crossorigin="anonymous"></script>
-<title>Strong Random Password Generator</title>
-</head>
-<body>
-
-<div id="root">
-<div class="App" onLoad="this.setSiteLangOnLoad">
-<div class="container">
-<div class="lang-wrapper">
-<div class="lang-inner-wrapper">
-<div class="lang-switch-wrapper">
-<div class="lang-switch">
-<svg onClick="this.toggleSiteLanguages" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1642 1640.808" fill="#ffffff">
-<path d="M1517.548,426.375c-1.106-5.512-3.798-10.066-7.79-13.567c-308.923-526.704-1072.705-519.697-1377.516,0
-                      c-4.015,3.521-6.692,8.088-7.79,13.566c-139.13,247.896-138.292,540.393,0,786.793c1.099,5.479,3.773,10.043,7.79,13.567
-                      c309.66,527.957,1071.458,521.823,1377.516-0.002c3.93-3.447,6.671-7.982,7.789-13.564
-                      C1656.679,965.27,1655.839,672.773,1517.548,426.375z M1475.669,1188.165c-43.573,6.814-226.708,10.313-272.028,11.144
-                      c64.008-234.159,65.616-519.024,0-759.076c45.862,0.841,228.419,4.324,272.026,11.144
-                      C1601.371,677.349,1609.554,947.477,1475.669,1188.165z M864.502,1570.699c-29.458,1.833-57.539,1.833-87.003-0.001
-                      c-137.402-21.634-228.148-189.126-273.247-321.788c196.921,2.76,431.623,2.83,633.499,0
-                      C1092.698,1381.434,1001.926,1549.063,864.502,1570.699z M489.002,1200.148c-67.596-235.671-67.662-524.855,0-760.756
-                      c207.323-3.101,457.275-3.092,663.997,0c67.596,235.672,67.661,524.855,0,760.756
-                      C946.09,1203.242,696.181,1203.246,489.002,1200.148z M777.523,68.841c29.332-1.825,57.399-1.839,86.971,0.001
-                      c137.423,21.631,228.168,189.163,273.256,321.788c-197.62-2.771-432.501-2.819-633.499,0
-                      C549.249,258.268,639.967,90.482,777.523,68.841z M1444.126,399.578c-68.136-4.408-186.787-6.972-254.994-8.148
-                      c-34.117-105.949-89.911-221.852-172.548-296.988C1187.27,141.422,1341.062,244.508,1444.126,399.578z M625.414,94.443
-                      c-82.664,75.161-138.446,191.089-172.546,296.987c-68.213,1.176-186.86,3.741-254.995,8.148
-                      C300.599,245.014,454.102,141.597,625.414,94.443z M166.332,451.376c43.69-6.832,227.787-10.333,272.028-11.144
-                      c-64.294,235.209-65.345,520.023,0,759.076c-46.077-0.845-228.442-4.329-272.027-11.143
-                      C40.624,962.182,32.452,692.053,166.332,451.376z M197.875,1239.963c68.075,4.403,186.604,6.969,254.994,8.147
-                      c34.35,106.675,90.242,222.153,172.547,296.988C454.731,1498.119,300.939,1395.034,197.875,1239.963z M1016.584,1545.099
-                      c82.656-75.152,138.446-191.085,172.548-296.989c68.328-1.177,186.901-3.743,254.995-8.147
-                      C1341.397,1394.535,1187.881,1497.95,1016.584,1545.099z" />
-</svg>
-<span class="site-lang">ENG</span>
-<ul class="lang-dropdown">
-<li data-lang="ENG" class="lang-dropdown-item">English</li>
-<li data-lang="FRA" class="lang-dropdown-item">French</li>
-<li data-lang="ESP" class="lang-dropdown-item">Spanish</li>
-<li data-lang="RUS" class="lang-dropdown-item">Russia</li>
-<li data-lang="ARA" class="lang-dropdown-item">Arabic</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<a href="https://strong-password-generator.com/"><h1 id="title">Strong Random Password Generator</h1></a>
-<p id="description">
-Use this tool to instantly create secure, random passwords.
-</p>
-
-<section class="ads-section"></section>
-
-<div class="form-wrapper">
-<div class="form-inner-wrapper">
-<div class="copy-feedback">
-<p id="copied">"** Copied"</p>
-</div>
-<form method="post" action="" class="form">
-<div class="form-top-section">
-<textarea type="text" name="" class="passfield" id="passfield1" read-only>
-                  </textarea>
-<input type="text" name="" class="passfield" id="passfield2" read-only />
-<div class="copy-wrapper" title="Copy Password" id="copy_password" onClick="">
-<img src="./assets/images/copy.svg" alt="Copy Icon" />
-</div>
-<div class="password_strength"></div>
-</div>
-<div class="advance-settings-wrapper">
-<label class="">
-<div class="switch">
-<span class="switch-lever"></span>
-</div>
-<input type="checkbox" name="" onChange="" id="advance-switch" />
-<span id="advanced">ADVANCED</span>
-</label>
-</div>
-<div class="form-footer-section">
-<div class="form-footer-main-column">
-<label id="password_length">Password Length</label>
-<input type="range" name="" class="password-length-range" value="16" min="6" max="100" step="1" />
-<div class="length-display">16</div>
-</div>
-<div class="form-footer-main-column">
-<div class="form-footer-column">
-<label class="selected">
-<input type="checkbox" name="" onChange="" id="lowercase" checked />
-<span id="lowercase_label">Lowercase</span>
-<span class="check"></span>
-</label>
-<label class="selected">
-<input type="checkbox" name="" onChange="" id="uppercase" checked />
-<span id="uppercase_label">Uppercase</span>
-<span class="check"></span>
-</label>
-</div>
-<div class="form-footer-column">
-<label class="selected">
-<input type="checkbox" name="" onChange="" id="numbers" checked />
-<span id="numbers_label">Numbers</span>
-<span class="check"></span>
-</label>
-<label class="selected">
-<input type="checkbox" name="" onChange="" id="symbols" checked />
-<span id="symbols_label">Symbols</span>
-<span class="check"></span>
-</label>
-</div>
-<div class="form-footer-column">
-<label class="" title="Generate hyphenated words as password" id="words_title">
-<input type="checkbox" name="" onChange="" id="words" class="words-checkbox" />
-<span id="words_label">Word Based</span>
-<span class="check"></span>
-</label>
-</div>
-<div class="form-footer-column advance-option">
-<label class="" title="Exclude Characters: 0, 1, I, i, O, ., |, `, ' " id="exclude_characters_title">
-<input type="checkbox" name="" autocomplete="new-password" onChange="" id="similarCharacters" />
-<span id="exclude_characters">Exclude look-alike characters</span
-                        >
-<span class="check"></span>
-</label>
-</div>
-<div class="form-footer-column advance-option">
-<div>
-<label for="doNotInclude" id="do_not_include">Do not include:
-</label>
-<input type="text" name="" id="doNotInclude" placeholder="Custom characters to exclude" value="" />
-</div>
-</div>
-</div>
-</div>
-<div class="form-button">
-<input type="submit" class="generate-button" value="Generate Password" id="generate_password" />
-</div>
-</form>
-<div class="error-wrapper">
-<p></p>
-</div>
-</div>
-</div>
-
-<section class="ads-section"></section>
-
-<div class="extended_section">
-<div class="extended_section_inner">
-<div class="faq_wrapper">
-<h2 id="faq_title">Frequently Asked Questions</h2>
-<ul class="faq_list"></ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<script src="./assets/scripts/WordList.js"></script>
-<script src="./assets/scripts/languages.js"></script>
-<script src="./assets/scripts/script.js"></script>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Icon Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Online Password Generator</h2>
+      <div class="wrapper">
+        <div class="input-box">
+          <input type="text" disabled>
+          <span class="material-symbols-rounded">copy_all</span>
+        </div>
+        <div class="pass-indicator"></div>
+        <div class="pass-length">
+          <div class="details">
+            <label class="title">Password Length</label>
+            <span></span>
+          </div>
+          <input type="range" min="1" max="30" value="15" step="1">
+        </div>
+        <div class="pass-settings">
+          <label class="title">Password Settings</label>
+          <ul class="options">
+            <li class="option">
+              <input type="checkbox" id="lowercase" checked>
+              <label for="lowercase">Lowercase (a-z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="uppercase">
+              <label for="uppercase">Uppercase (A-Z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="numbers">
+              <label for="numbers">Numbers (0-9)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="symbols">
+              <label for="symbols">Symbols (!-$^+)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="exc-duplicate">
+              <label for="exc-duplicate">Exclude Duplicate</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="spaces">
+              <label for="spaces">Include Spaces</label>
+            </li>
+          </ul>
+        </div>
+        <button class="generate-btn">Generate Password</button>
+      </div>
+    </div>
+    
+  </body>
 </html>
